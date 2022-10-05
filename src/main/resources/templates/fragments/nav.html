@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <ul th:fragment="navigation_fragment" class="list">
+        <li><a th:href="@{/index}">Home</a></li>
+        <li><a th:href="@{/contactList}">Registered contacts</a></li>
+        <li><a th:href="@{/contact}">Register your email</a></li>
+        <li><a th:href="@{/feverCheck}">Temperature Check</a></li>
+        <li><a th:href="@{/about}">About Us</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MVC Thymeleaf Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="img/favicon.png" rel="icon">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="logo group underline">
+        <a th:href="@{/index}"><img class="logo-img float-left" src="img/logo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="nav group underline">
+        <div th:insert="fragments/nav :: navigation_fragment"></div>
+    </nav>
+
+    <div class="main group center-aligned">
+        <p>
+            Java development training is a program that has been made possible by the
+            combined effort of Lexicon and the Swedish unemployment agency.
+        </p>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <img class="img" src="img/logo.png" height="300" width="300" alt="Nature">
+    </div>
+
+    <footer class="footer center-aligned">
+        <div th:insert="fragments/footer :: footer_fragment"></div>
+    </footer>
+
+</div>
+</body>
+
+</html>
