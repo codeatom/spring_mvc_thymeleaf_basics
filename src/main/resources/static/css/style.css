@@ -6,7 +6,7 @@ body {
   
   .container {
     display: grid;
-    grid-gap: 0px;
+    grid-gap: 0;
     grid-template-columns: 0.8fr 2.2fr;
     grid-template-rows: 0.1fr 2.1fr 0.1fr;
   
@@ -98,7 +98,7 @@ body {
   }
 
   #contactList th {
-    background-color: #808080;
+    background-color: #3c5d5d;
     color: white;
   }
 

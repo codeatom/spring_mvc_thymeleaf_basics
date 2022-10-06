@@ -23,15 +23,17 @@
     <table id="contactList">
       <thead>
          <tr>
-            <th class="table"> Registered Email List </th>
+             <th scope="col"> # </th>
+             <th scope="col"> Registered Email List </th>
          </tr>
       </thead>
       <tbody>
          <tr th:if="${contactList.isEmpty()}">
             <td> No registered email </td>
          </tr>
-         <tr th:each="email : ${contactList}">
-            <td><span th:text="${email}"> email </span></td>
+         <tr th:each="email, iter : ${contactList}">
+             <th scope="row" th:text="${iter.index+1}"> 1 </th>
+             <td th:text="${email}"> email</td>
          </tr>
       </tbody>
     </table>
